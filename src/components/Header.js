@@ -6,8 +6,6 @@ import { useHistory, Link } from 'react-router-dom';
 import "./Header.css";
 
 const Header = ({ children, hasHiddenAuthButtons }) => {
-  // console.log(children);
-  // console.log(hasHiddenAuthButtons)
 
   const history = useHistory()
   // const isLoggedIn = localStorage.getItem("token");

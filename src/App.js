@@ -14,16 +14,26 @@ function App() {
   return (
     <div className="App">
       {/* TODO: CRIO_TASK_MODULE_LOGIN - To add configure routes and their mapping */}
-          
-          {/* <Products/> */}
 
-          <Switch>
-            <Route path="/login"><Login/></Route>
-            <Route path="/register"><Register/></Route>
-            <Route exact path="/"><Products/></Route>
-            <Route path="/checkout"><Checkout/></Route>
-            <Route path="/thanks"><Thanks /></Route>
-          </Switch>
+      {/* <Products/> */}
+
+      <Switch>
+        <Route path="/login">
+          <Login />
+        </Route>
+        <Route path="/register">
+          <Register />
+        </Route>
+        <Route exact path="/">
+          <Products />
+        </Route>
+        <Route path="/checkout">
+          <Checkout />
+        </Route>
+        <Route path="/thanks">
+          <Thanks />
+        </Route>
+      </Switch>
     </div>
   );
 }

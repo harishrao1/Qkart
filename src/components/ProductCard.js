@@ -26,43 +26,38 @@ import "./ProductCard.css";
 // });
 
 const ProductCard = ({ product, handleAddToCart }) => {
-  // const classes = useStyles();
-  // console.log(handleAddToCart);
   return (
     <Card className="card">
-        <CardMedia 
-          component="img"
-          heigth="200"
-          image={product.image}
-          alt={product.name}
-        />
-        <CardContent>
-          <Typography >
-            {product.name}
-          </Typography>
-          <Typography paddingY="0.5rem" fontWeight="700">
-            ${product.cost}
-          </Typography>
-          <Rating  
-            name="read-only"
-            value={product.rating}
-            readOnly
-            precision={0.5}
+      <CardMedia
+        component="img"
+        height="200"
+        image={product.image}
+        alt={product.name}
+      />
+      <CardContent>
+        <Typography>{product.name}</Typography>
+        <Typography paddingY="0.5rem" fontWeight="700">
+          ${product.cost}
+        </Typography>
+        <Rating
+          name="read-only"
+          value={product.rating}
+          readOnly
+          precision={0.5}
           // emptyIcon={fontSize="inherit"}
-          >
-          </Rating>
-        </CardContent>
+        ></Rating>
+      </CardContent>
       <CardActions className="card-actions">
-        <Button 
+        <Button
           className="card-button"
-          variant="contained" 
+          variant="contained"
           fullWidth
           color="primary"
-          startIcon={<AddShoppingCartOutlined/>}
+          startIcon={<AddShoppingCartOutlined />}
           onClick={handleAddToCart}
-           >
-            Add to cart
-            </Button>
+        >
+          Add to cart
+        </Button>
       </CardActions>
     </Card>
   );

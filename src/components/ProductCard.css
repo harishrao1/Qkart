@@ -8,7 +8,9 @@
 .card-actions {
     margin-bottom: 1rem;
 }
-
+.css-o69gx8-MuiCardMedia-root{
+    object-fit: contain !important;
+}
 .card-button {
     text-transform: none;
     font-weight: 600;
